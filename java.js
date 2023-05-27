@@ -1,10 +1,11 @@
 let choice = ["rock", "paper", "scissors"];
-let computerChoice;
+let computerChoice = getComputerChoice();
 let playerChoice;
+let choose;
+let r,p,s;
 let cc = 0;
 let pc = 0;
-let n ;
-let wantToPlay = 'yes';
+
 
 function getComputerChoice(){
     let i = Math.floor(Math.random()* 3)
@@ -33,30 +34,21 @@ function compare(computerChoice, playerChoice){
     }
 }
 
-function game(){
-    for(n = 0;n < 5; n++){
-        computerChoice = getComputerChoice();
-        playerChoice = prompt("Enter your choice");
-        playerChoice = playerChoice.toLowerCase();
-    
-        compare(computerChoice,playerChoice);
-    }
+document.getElementById("btr").addEventListener('click',rock);
+document.getElementById("btp").addEventListener('click',paper);
+document.getElementById("bts").addEventListener('click',scissors);
+
+function rock(){
+    playerChoice = "rock";
 }
-function result(){
-    if(cc > pc){
-        document.querySelector("Computer wins by "+cc);
-    }else if(pc > cc){
-        console.log("You wins by "+pc);
-    }else{
-        console.log("Draw");
-    }
+function paper(){
+    playerChoice = "paper";
+}
+function scissors(){
+    playerChoice = "scissors";
 }
 
-while (wantToPlay == 'yes'){
 
-    game();
-    result();
-
-    wantToPlay = prompt("Do you want to play again(yes/no)");
-    wantToPlay = wantToPlay.toLowerCase();
-}
+getComputerChoice();
+compare(computerChoice,playerChoice);
+console.log(playerChoice)
