@@ -44,7 +44,7 @@ function game(){
 }
 function result(){
     if(cc > pc){
-        console.log("Computer wins by "+cc);
+        document.querySelector("Computer wins by "+cc);
     }else if(pc > cc){
         console.log("You wins by "+pc);
     }else{
