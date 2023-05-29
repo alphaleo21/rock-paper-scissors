@@ -12,18 +12,18 @@ body{
 }
 
 .title{
-    font-size: 10em;
+    font-size: xx-large;
     margin: .5em;
 }
 
 #replay{
-    font-size: 2em;
+    font-size: larger;
 }
 
 button{
     padding: .5em;
     margin: .5em;
-    font-size: 2.7em;
+    font-size: larger;
     border-radius: 2em;
 }
 
