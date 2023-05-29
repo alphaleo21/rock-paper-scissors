@@ -45,19 +45,18 @@ function getComputerChoice(){
     let i = Math.floor(Math.random()* 3)
     return choice[i];
 }
-let j = 0;
+
 function play(){
-    if(j<5){
+    if(pc < 5 && cc <5){
         computerChoice = getComputerChoice();
         console.log(computerChoice)
         compare(computerChoice, playerChoice);
     }
-    else if(j==5 && pc > cc){
-        document.getElementById('result').innerHTML = "Player wins by "+pc
-    }else if(j==5 && cc > pc){
-        document.getElementById('result').innerHTML = "Computer wins by "+cc
-    }else if(j > 5){
-        document.getElementById('result').innerHTML = "Press F5 to rePlay "
+    else if( pc == 5){
+        document.getElementById('result').innerHTML = "Player wins by "+pc;
+        document.getElementById('replay').innerHTML = "Press F5 to rePlay ";
+    }else if(cc == 5){
+        document.getElementById('result').innerHTML = "Computer wins by "+cc;
+        document.getElementById('replay').innerHTML = "Press F5 to rePlay "
     }
-    j++;
 }

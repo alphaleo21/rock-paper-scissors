@@ -15,6 +15,10 @@ body{
     margin: .5em;
 }
 
+#replay{
+    font-size: larger;
+}
+
 button{
     padding: .5em;
     margin: .5em;
