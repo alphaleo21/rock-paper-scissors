@@ -4,6 +4,7 @@ body{
     justify-content: center;
 }
 .frame{
+    margin-top: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
