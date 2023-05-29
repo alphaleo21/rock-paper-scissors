@@ -5,11 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <button class="btn" id="btr">Rock</button>
-    <button class="btn" id="btp">Paper</button>
-    <button class="btn" id="bts">Scissors</button>
+    <div class="frame">
+        <div class="title">ROCK PAPER SCISSORS</div>
+        <div class="buttons">
+            <button onclick="getPlayerChoice('rock')">Rock</button>
+            <button onclick="getPlayerChoice('paper')">Paper</button>
+            <button onclick="getPlayerChoice('scissors')">Scissors</button>
+        </div>
+        <button class="play" onclick="play()">PLAY</button>
+        <div id="result"></div>
+    </div>
 </body>
     <script src="java.js"></script>
 </html>

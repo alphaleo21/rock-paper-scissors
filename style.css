@@ -1,0 +1,37 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.frame{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title{
+    font-size: xx-large;
+    margin: .5em;
+}
+
+button{
+    padding: .5em;
+    margin: .5em;
+    font-size: larger;
+    border-radius: 2em;
+}
+
+.play{
+    padding: 1.5em;
+    border-radius: 1em;
+}
+
+button:hover{
+    background-color: black;
+    color: white;
+}
+
+#result{
+    font-size: x-large;
+}
